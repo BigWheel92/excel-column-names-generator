@@ -41,7 +41,7 @@ void reset(string& str)
 int main()
 {
 	int n;
-	cout << "Please enter positive integer number: ";
+	cout << "Please enter a positive integer number: ";
 	cin >> n;
 	if (n < 1)
 		return 0;
