@@ -64,7 +64,7 @@ int main()
 			currColName[length - 1]++;
 
 		/*when some (contiguous) characters from the end (length-1 to k) have
-		  become Z, we will reset them to A and increment the (i-1)th character.*/
+		  become Z, we will reset them to A and increment the (k-1)th character.*/
 		else reset(currColName);
 	}
 }
