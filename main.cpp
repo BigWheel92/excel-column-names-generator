@@ -58,13 +58,13 @@ int main()
 		if (allZs(currColName) == true)
 			resetAllAndAppendA(currColName);
 
-		/*if the last few characters or even just the last character
-		  is not Z, then we increment the last character.*/
+		/*if the last character is not Z, 
+		  then we increment the last character.*/
 		else if (currColName[length - 1] != 'Z')
 			currColName[length - 1]++;
 
-		/*when some character from the end (length-1 to i) have
-		  have become Z, we will reset them to A and increment the (i-1)th character.*/
+		/*when some (contiguous) characters from the end (length-1 to k) have
+		  become Z, we will reset them to A and increment the (i-1)th character.*/
 		else reset(currColName);
 	}
 }
